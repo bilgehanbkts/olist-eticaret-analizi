@@ -129,8 +129,8 @@ GROUP BY
     END
 ORDER BY ilk_siparis_puani;
 
--- 7) (Opsiyonel) Aynı soru, en büyük 3 eyalette ayrı ayrı: gecikme etkisi
---    yer farkından mı kaynaklanıyor? (README'deki bulgular bu sorguya dayanmaz.)
+-- 7) Aynı soru, en büyük 3 eyalette ayrı ayrı: gecikme etkisi yer farkından
+--    mı kaynaklanıyor? (Sonuçlar README'de.)
 WITH siralama AS (
     SELECT
         customer_unique_id,
