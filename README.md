@@ -121,6 +121,23 @@ Kuzey ve kuzeydoğu eyaletlerinde (MA, CE, BA, PA, PB, PE) teslimat süresi 18-2
 | Zamanında teslim edildi | 40.004 | %4,25 |
 | Geç teslim edildi | 2.389 | %2,72 |
 
+**Eyalet bazında kontrol** (en büyük 3 eyalet, aynı müşteri grubu):
+
+| Eyalet | İlk sipariş | Müşteri | Tekrar alım oranı |
+|---|---|---|---|
+| SP | Zamanında | 16.004 | %4,52 |
+| SP | Geç | 636 | %2,99 |
+| RJ | Zamanında | 5.223 | %4,63 |
+| RJ | Geç | 603 | %1,66 |
+| MG | Zamanında | 4.983 | %4,15 |
+| MG | Geç | 142 | %1,41 |
+
+Geç teslim edilen ilk siparişlerde tekrar alım oranı üç eyalette de daha düşük.
+Bu, farkın yalnızca eyaletler arası farktan kaynaklanmadığını destekliyor.
+Rio de Janeiro'da fark en net (%4,63 yerine %1,66), São Paulo'da daha küçük.
+Minas Gerais'te geç grupta yalnızca 142 müşteri ve yaklaşık 2 tekrar alan var,
+bu yüzden o sonuç güvenilir değil.
+
 | İlk siparişin puanı | Müşteri | Tekrar alım oranı |
 |---|---|---|
 | Düşük (1-2) | 5.101 | %3,61 |
@@ -152,7 +169,8 @@ Kuzey ve kuzeydoğu eyaletlerinde (MA, CE, BA, PA, PB, PE) teslimat süresi 18-2
 - Gelir hesaplarında yalnızca ürün fiyatı kullanıldı (kargo ücreti dahil değil), yalnızca teslim edilen siparişler alındı.
 - "Kaybedilen" segment, müşterinin gerçekten kaybedildiğini değil, verinin bittiği tarihe göre uzun süredir alışveriş yapmadığını gösterir.
 - Gecikme, platformun verdiği tahmini tarihe göre tanımlandı.
-- Bulgular ilişkiyi gösterir, kesin neden-sonuç ilişkisi kanıtlamaz. Örneğin uzak bölgelerde yaşayan müşterilerde hem gecikme hem düşük tekrar alım aynı anda görülüyor olabilir.
+- Bulgular ilişkiyi gösterir, kesin neden-sonuç ilişkisi kanıtlamaz. Gecikme etkisi en büyük üç eyalette ayrı ayrı incelendiğinde de görüldü, ama aynı eyalet içindeki
+  şehir, ürün türü veya satıcı farkları gibi diğer etkenler kontrol edilmedi.
 - Mutsuz müşteriler yorum bırakmaya daha yatkın olabilir, bu yüzden puan analizleri memnuniyetsizliği biraz abartıyor olabilir. Yorum bırakmayan siparişler puan analizlerine dahil değil.
 - Tekrar alım analizi için ilk siparişi 2018 öncesi olan müşteriler alındı.
 
